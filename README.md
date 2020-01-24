@@ -1,6 +1,8 @@
-This is a faster pytorch implementation of https://github.com/PengjieRen/RepeatNet in the paper:
+This is a pytorch implementation of https://github.com/PengjieRen/RepeatNet in the paper:
 
 Pengjie Ren, Jing Li, Zhumin Chen, Zhaochun Ren, Jun Ma and Maarten de Rijke (2019). RepeatNet: A Repeat Aware Neural Recommendation Machine for Session-based Recommendation. In Proceedings of The Thirty-Third AAAI Conference on Artificial Intelligence.
+
+This 
 
 We have additionally released our implementation of NARM in the paper:
 
