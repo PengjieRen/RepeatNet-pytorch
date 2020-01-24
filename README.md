@@ -5,7 +5,7 @@ Pengjie Ren, Jing Li, Zhumin Chen, Zhaochun Ren, Jun Ma and Maarten de Rijke (20
 This pytorch version supports distributed GPU computing, and has a higher GPU usage.
 Run with the following command:
 
-python -m torch.distributed.launch --nproc_per_node=#GPU ./Repeat/Run.py --mode='train' or 'infer'
+python -m torch.distributed.launch --nproc_per_node=#GPU ./RepeatNet/Run.py --mode='train' or 'infer'
 
 We have additionally released our implementation of NARM in the paper:
 
