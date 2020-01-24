@@ -48,7 +48,7 @@ def train(args):
         trainer.train_epoch('train', train_dataset, collate_fn, batch_size, i, model_optimizer)
         trainer.serialize(i, output_path=base_output_path)
 
-def test(args):
+def infer(args):
     batch_size = 1024
 
     valid_dataset = RepeatNetDataset(base_data_path + 'demo.valid')
@@ -97,9 +97,7 @@ if __name__ == '__main__':
     print(cudnn.version())
     init_seed(123456)
 
-    test(args)
-
-    if args.mode=='test':
-        test(args)
+    if args.mode=='infer':
+        infer(args)
     elif args.mode=='train':
         train(args)
