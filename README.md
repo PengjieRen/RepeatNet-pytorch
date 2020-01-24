@@ -3,6 +3,9 @@ This is a pytorch (>=1.3.0) implementation of https://github.com/PengjieRen/Repe
 Pengjie Ren, Jing Li, Zhumin Chen, Zhaochun Ren, Jun Ma and Maarten de Rijke (2019). RepeatNet: A Repeat Aware Neural Recommendation Machine for Session-based Recommendation. In Proceedings of The Thirty-Third AAAI Conference on Artificial Intelligence.
 
 This pytorch version supports distributed GPU computing, and has a higher GPU usage.
+Run with the following command:
+
+python -m torch.distributed.launch --nproc_per_node=#GPU ./$1/Run.py --mode='train' or 'infer'
 
 We have additionally released our implementation of NARM in the paper:
 
